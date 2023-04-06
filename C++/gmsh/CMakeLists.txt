@@ -19,3 +19,4 @@ include("${blaze_DIR}/blaze-config-version.cmake")
 link_libraries(blaze::blaze)
 
 add_executable(mesh main.cpp)
+target_link_libraries(mesh ${GMSH_LIB})
