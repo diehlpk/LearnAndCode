@@ -63,7 +63,12 @@ for (size_t i = 0; i < nodeTags.size(); i++) {
 
 int main(void){
 
+    blaze::DynamicMatrix<double> gcoord;
+    blaze::DynamicMatrix<size_t> nodes;
 
+    readGmsh("../../untitled.msh", &gcoord, &nodes, 2);
+
+        
     return EXIT_SUCCESS;
 
 }
