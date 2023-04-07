@@ -1,3 +1,5 @@
+Mesh.Algorithm = 8; // Delaunay for quads
+
 //+
 Point(1) = {0, 0, 0, 1.0};
 //+
@@ -28,3 +30,5 @@ Physical Curve(7) = {4, 3, 2, 1, 6, 5};
 Curve Loop(1) = {1, 2, -3, -4, 5, 6};
 //+
 Plane Surface(1) = {1};
+
+Physical Surface(1) = {1};
