@@ -20,3 +20,5 @@ link_libraries(blaze::blaze)
 
 add_executable(mesh main.cpp)
 target_link_libraries(mesh ${GMSH_LIB})
+
+set_property(TARGET mesh PROPERTY CXX_STANDARD 17)
